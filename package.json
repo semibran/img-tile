@@ -1,7 +1,7 @@
 {
   "name": "img-tile",
   "version": "1.0.0",
-  "description": "Tile an <img> from a given width and height",
+  "description": "tile an <img> from a given width and height",
   "author": "semibran (Brandon Semilla)",
   "repository": "semibran/img-tile",
   "license": "MIT",
