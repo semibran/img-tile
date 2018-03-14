@@ -1,19 +1,16 @@
 {
- "name": "img-split",
- "version": "0.1.0",
- "description": "Split an <img> into equally-sized parts",
- "keywords": [
-  "split",
-  "image",
-  "img",
-  "sprites",
-  "game"
- ],
- "main": "index.js",
- "license": "MIT",
- "author": "Brandon Semilla (https://github.com/semibran)",
- "repository": {
-  "type": "git",
-  "url": "https://github.com/semibran/img-split.git"
- }
+  "name": "img-tile",
+  "version": "1.0.0",
+  "description": "Tile an <img> from a given width and height",
+  "author": "semibran (Brandon Semilla)",
+  "repository": "semibran/img-tile",
+  "license": "MIT",
+  "main": "lib/img-tile.js",
+  "keywords": [
+    "tile",
+    "img",
+    "image",
+    "sprite",
+    "spritesheet"
+  ]
 }
