@@ -1,33 +1,30 @@
-# img-split
-> Split an `<img>` into equally-sized parts
+# img-tile
+> tile an `<img>` from a given width and height
 
-![Super Mario Bros. overworld tileset split into 16x16 fragments](./tiles.png)
+![mario tileset split into 16x16 fragments](img/tiles.png)
 
-## install
-```sh
-npm install img-split
-```
-
-## usage
 ```js
-const split = require('img-split')
-const load = require('img-load')
+const tile = require("img-tile")
+const load = require("img-load")
 
-load('./tiles.png', (error, image) => {
-  if (error) throw error
-  var tiles = split(image, 16, 16)
-  for (var tile of tiles) {
+load("./tiles.png", (err, image) => {
+  if (err) throw err
+  let tiles = tile(image, 16, 16)
+  for (let tile of tiles) {
     document.body.appendChild(tile)
   }
 })
 ```
 
-### `images = split(image, width, height)`
-Splits `image` into individual `<canvas>` elements of the dimensions described by `width` and `height`.
+## usage
+[![npm badge]][npm package]
 
-- `image`: The `HTMLImageElement` to be split
-- `width`: The desired width of each resulting `<canvas>` element
-- `height`: The desired height of each resulting `<canvas>` element
+### `tile(image, width, height) -> images`
+Splits the given `image` into individual `<canvas>` elements of the dimensions described by `width` and `height`.
 
-## license
-[MIT](https://opensource.org/licenses/MIT) © [Brandon Semilla](https://git.io/semibran)
+* `image`: The `HTMLImageElement` to be split
+* `width`: The desired width of each resulting `<canvas>` element
+* `height`: The desired height of each resulting `<canvas>` element
+
+[npm package]: https://www.npmjs.org/package/img-tile
+[npm badge]:   https://nodei.co/npm/img-tile.png?mini
